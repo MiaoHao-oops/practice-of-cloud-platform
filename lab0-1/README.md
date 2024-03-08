@@ -5,18 +5,12 @@
 1. 查看CPU是否支持虚拟化：
 
     ```sh
-    LC_ALL=C lscpu | grep Virtualization
-    ```
-
-    > `LC_ALL=C` 统一设置 `LC_*` 环境变量 for Computer，保证命令输出格式统一
-
-    运行结果：
-
-    ```sh
     root@server-hyjmc2qr:~# LC_ALL=C lscpu | grep Virtualization
     Virtualization:                  VT-x
     Virtualization type:             full
     ```
+
+    > `LC_ALL=C` 统一设置 `LC_*` 环境变量 for Computer，保证命令输出格式统一
 
     以上输出说明服务器支持 VT-x 虚拟化扩展。
 
